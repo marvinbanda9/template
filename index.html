@@ -124,60 +124,126 @@
     <!-- Hero End -->
 
 
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded" src="img/img1.jpg"
-                            style="object-fit: cover;">
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row gx-5">
+
+            <!-- Slideshow -->
+            <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                
+                <div id="aboutCarousel" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="5000">
+
+                    <div class="carousel-inner h-100 rounded">
+
+                        <div class="carousel-item active h-100">
+                            <img src="img/img1.jpg" class="d-block w-100 h-100" style="object-fit: cover;">
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <img src="img/img2.jpg" class="d-block w-100 h-100" style="object-fit: cover;">
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <img src="img/img3.jpg" class="d-block w-100 h-100" style="object-fit: cover;">
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <img src="img/img4.jpg" class="d-block w-100 h-100" style="object-fit: cover;">
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <img src="img/img5.jpg" class="d-block w-100 h-100" style="object-fit: cover;">
+                        </div>
+
+                        <!-- Add more manually up to img30.jpg -->
+                        <div class="carousel-item h-100">
+                            <img src="img/img6.jpg" class="d-block w-100 h-100" style="object-fit: cover;">
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <img src="img/img7.jpg" class="d-block w-100 h-100" style="object-fit: cover;">
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <img src="img/img8.jpg" class="d-block w-100 h-100" style="object-fit: cover;">
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <img src="img/img9.jpg" class="d-block w-100 h-100" style="object-fit: cover;">
+                        </div>
+
+                        <div class="carousel-item h-100">
+                            <img src="img/img10.jpg" class="d-block w-100 h-100" style="object-fit: cover;">
+                        </div>
+
+                        <!-- continue until img30.jpg -->
+
                     </div>
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
                 </div>
-                <div class="col-lg-7">
-                    <div class="mb-4">
-                        <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
-                        <h1 class="display-4">Best Medical Care For Yourself and Your Family</h1>
+
+            </div>
+
+            <!-- Text Content -->
+            <div class="col-lg-7">
+                <div class="mb-4">
+                    <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
+                    <h1 class="display-4">Best Medical Care For Yourself and Your Family</h1>
+                </div>
+
+                <p>
+                    Mpigi Hospital is committed to providing high-quality, patient-centered healthcare services to the community. 
+                    Our experienced medical team offers a wide range of services including outpatient care, emergency treatment, 
+                    maternal and child health, laboratory diagnostics, and specialized medical support. We prioritize compassion, 
+                    safety, and modern medical practices to ensure every patient receives the best possible care in a welcoming 
+                    and supportive environment.
+                </p>
+
+                <div class="row g-3 pt-3">
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-user-md text-primary mb-3"></i>
+                            <h6 class="mb-0">Qualified<small class="d-block text-primary">Doctors</small></h6>
+                        </div>
                     </div>
-                 <p>
-Mpigi Hospital is committed to providing high-quality, patient-centered healthcare services to the community. 
-Our experienced medical team offers a wide range of services including outpatient care, emergency treatment, 
-maternal and child health, laboratory diagnostics, and specialized medical support. We prioritize compassion, 
-safety, and modern medical practices to ensure every patient receives the best possible care in a welcoming 
-and supportive environment.
-</p>
-                    <div class="row g-3 pt-3">
-                        <div class="col-sm-3 col-6">
-                            <div class="bg-light text-center rounded-circle py-4">
-                                <i class="fa fa-3x fa-user-md text-primary mb-3"></i>
-                                <h6 class="mb-0">Qualified<small class="d-block text-primary">Doctors</small></h6>
-                            </div>
+
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-procedures text-primary mb-3"></i>
+                            <h6 class="mb-0">Emergency<small class="d-block text-primary">Services</small></h6>
                         </div>
-                        <div class="col-sm-3 col-6">
-                            <div class="bg-light text-center rounded-circle py-4">
-                                <i class="fa fa-3x fa-procedures text-primary mb-3"></i>
-                                <h6 class="mb-0">Emergency<small class="d-block text-primary">Services</small></h6>
-                            </div>
+                    </div>
+
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-microscope text-primary mb-3"></i>
+                            <h6 class="mb-0">Accurate<small class="d-block text-primary">Testing</small></h6>
                         </div>
-                        <div class="col-sm-3 col-6">
-                            <div class="bg-light text-center rounded-circle py-4">
-                                <i class="fa fa-3x fa-microscope text-primary mb-3"></i>
-                                <h6 class="mb-0">Accurate<small class="d-block text-primary">Testing</small></h6>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-6">
-                            <div class="bg-light text-center rounded-circle py-4">
-                                <i class="fa fa-3x fa-ambulance text-primary mb-3"></i>
-                                <h6 class="mb-0">Free<small class="d-block text-primary">Ambulance</small></h6>
-                            </div>
+                    </div>
+
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-ambulance text-primary mb-3"></i>
+                            <h6 class="mb-0">Free<small class="d-block text-primary">Ambulance</small></h6>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-    <!-- About End -->
-
+</div>
+<!-- About End -->
 
  <!-- Services Start -->
 <div class="container-fluid py-5">
